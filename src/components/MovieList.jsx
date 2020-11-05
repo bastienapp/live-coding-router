@@ -6,13 +6,13 @@ function MovieList() {
   const movies = fetchAll();
   return (
     <section className="Movies">
-      {movies.map((movie) => (
-        <ul>
+      <ul>
+        {movies.map((movie) => (
           <li key={movie.id}>
             <MovieItem key={movie.id} id={movie.id} />
           </li>
-        </ul>
-      ))}
+        ))}
+      </ul>
     </section>
   );
 }
