@@ -7,7 +7,11 @@ function MovieList() {
   return (
     <section className="Movies">
       {movies.map((movie) => (
-        <MovieItem key={movie.id} id={movie.id} />
+        <ul>
+          <li key={movie.id}>
+            <MovieItem key={movie.id} id={movie.id} />
+          </li>
+        </ul>
       ))}
     </section>
   );
