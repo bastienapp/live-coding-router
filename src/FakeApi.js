@@ -14,7 +14,7 @@ const movies = [
       'https://m.media-amazon.com/images/M/MV5BNGViZWZmM2EtNGYzZi00ZDAyLTk3ODMtNzIyZTBjN2Y1NmM1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg',
   },
   {
-    id: 'tt0078748',
+    id: 'tt0095016',
     title: 'Die Hard',
     release: '1988',
     poster:
