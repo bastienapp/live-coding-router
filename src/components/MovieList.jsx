@@ -1,6 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { fetchAll } from '../FakeApi';
-import MovieItem from './MovieItem';
 
 function MovieList() {
   const movies = fetchAll();
@@ -9,7 +9,7 @@ function MovieList() {
       <ul>
         {movies.map((movie) => (
           <li key={movie.id}>
-            <MovieItem key={movie.id} id={movie.id} />
+            <Link to={`/movies/${movie.id}`}>{movie.title}</Link>
           </li>
         ))}
       </ul>

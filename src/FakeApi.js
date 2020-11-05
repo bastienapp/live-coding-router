@@ -27,5 +27,5 @@ export const fetchAll = () => {
 };
 
 export const fetchOne = (id) => {
-  return movies.filter((movie) => movie.id === id)[0];
+  return movies.find((movie) => movie.id === id);
 };
