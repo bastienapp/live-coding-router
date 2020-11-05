@@ -1,14 +1,14 @@
 import React from 'react';
-import MovieAlien from './MovieAlien';
-import MovieTheThing from './MovieTheThing';
-import MovieDieHard from './MovieDieHard';
+import { fetchAll } from '../FakeApi';
+import MovieItem from './MovieItem';
 
 function MovieList() {
+  const movies = fetchAll();
   return (
     <section className="Movies">
-      <MovieAlien />
-      <MovieTheThing />
-      <MovieDieHard />
+      {movies.map((movie) => (
+        <MovieItem key={movie.id} id={movie.id} />
+      ))}
     </section>
   );
 }
